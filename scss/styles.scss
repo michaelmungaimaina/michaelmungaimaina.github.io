@@ -287,10 +287,10 @@ footer {
 
 .btn-rounded-white {
     display: inline-block;
-    text-decoration-color: #74808a00;
-    color: #ffffff00;
+    text-decoration-color: #3498db82;
+    color: #3498db82;
     padding: 15px 25px;
-    border: 3px solid #ffffff00;
+    border: 3px solid #3498db82;
     border-radius: 30px;
     @include transition();
 
@@ -978,16 +978,11 @@ footer {
 
     header {
         position: fixed;
-        z-index: 99999999;
+        display: none;
+        z-index: 999;
         animation: none;
-        top: 0;
-        width: 100%;
-    }
-    .sticky-nav {
-        position:fixed;
-        top:0;
-        width: 100%;
-        z-index: 99999999;
+        bottom: 0;
+        height: 100%;
     }
 
     #mobile-menu-open, #mobile-menu-close {
