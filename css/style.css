@@ -1,0 +1,1612 @@
+/* font family Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* font family Barlow */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*  01. Reset Section  */
+
+html,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+acronym,
+legend,
+samp,
+sub {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: "";
+}
+
+button:focus {
+    outline: none;
+}
+
+a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    text-transform: capitalize;
+    font-family: "Barlow", sans-serif;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: #c9c3c3;
+}
+
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+label {
+    font-weight: normal;
+}
+
+iframe {
+    width: 100%;
+}
+
+/* 02 Global Style  */
+
+h1 {
+    font-size: 75px;
+    font-weight: 800px;
+    line-height: 85px;
+}
+
+h2 {
+    font-size: 45px;
+    font-weight: 800px;
+    line-height: 51px;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 800px;
+    line-height: 31px;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: 800px;
+    line-height: 28px;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 600px;
+    line-height: 26px;
+}
+
+
+.headerindex {
+    background-color: #302E2C;
+    background-position: center;
+    block-size: cover;
+}
+
+header {
+    padding: 0 0;
+}
+
+@keyframes dropHeader {
+    0% {
+        transform: translateY(-100%)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 15px;
+    color: #302E2C;
+    animation-name: dropHeader;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 0.75s
+}
+
+.container-nav {
+    gap: 50px;
+}
+
+.navbar-logo {
+    margin-right: 25px;
+}
+
+.fa {
+    color: #ffffff;
+}
+
+.navbar-toggler {
+    /*--border: 1px solid #737373; */
+    background: linear-gradient(42deg, #F65730 100%, #F65730 0.01%);
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: none;
+    height: 35px;
+    width: 45px;
+}
+
+.navbar-toggler:hover {
+    background: inherit;
+    border: 1px solid #F65730;
+
+    .fa {
+        color: #F65730;
+    }
+}
+
+.navbar-toggler span {
+    color: white;
+    font-size: 18px;
+}
+
+.navbar-nav {
+    gap: 20px;
+}
+
+/* Navigation text */
+.nav-link {
+    font-weight: bolder;
+    color: white;
+    font-style: bold;
+}
+
+.active,
+.fa-caret-down,
+.nav-link:is(:hover, :focus-visible) {
+    color: #F65730;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.fa-caret-down {
+    color: white;
+}
+
+.dropdown-toggle::after {
+    content: '';
+    vertical-align: center;
+    margin-left: 5px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    padding: 30px;
+    z-index: 9;
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    width: 220px;
+    padding: 15px 0 15px 0;
+    border-radius: 10px;
+    background-color: #302E2C;
+    margin-left: -30px;
+}
+
+.dropdown-menu li {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: white;
+    width: 100%;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.dropdown-item::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    background-color: #f6583082;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.dropdown-item:hover::before {
+    width: 100%;
+    background-color: #f65830aa;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: #ffffff;
+    background-color: inherit;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+}
+
+/* Search bar  */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: #4a4a4a;
+    border-radius: 10px;
+    width: 300px;
+    height: 29px;
+    position: relative;
+    padding-left: 10px;
+    padding-bottom: -15;
+}
+
+.search-bar .fa-magnifying-glass:is(:hover, :active, :focus-visible) {
+    color: #f65830b1;
+    font-size: 20px;
+    transform: scale(0.9);
+}
+
+.fa-magnifying-glass {
+    color: #7D8489;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.nav-right {
+    gap: 30px;
+}
+
+.nav-right p {
+    color: white;
+}
+
+.nav-right span {
+    color: #F65730;
+}
+
+.nav-right .fa-bars {
+    color: white;
+    font-size: 22px;
+    background-color: #F65730;
+    padding: 7px 8px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    :active {
+        transform: scale(0.8);
+    }
+}
+
+.nav-right .fa-bars:active {
+    transform: scale(0.8);
+}
+
+.nav-right .fa-magnifying-glass:active {
+    color: #F65730;
+    transform: scale(0.8);
+}
+
+/* Responsiveness of the Header */
+@media screen and (max-width: 880px) {
+    .navbar-toggler {
+        display: block !important;
+    }
+
+    .navbar-nav,
+    .search-bar,
+    .nav-right {
+        display: none !important;
+    }
+
+    .container-nav {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+/* Sidepanel */
+.sidepanel {
+    background-color: #4a4a4a;
+    z-index: 10;
+    position: fixed;
+    width: 320px;
+    height: 100vh;
+    top: 0;
+    left: -320px;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding: 40px 20px 20px 20px;
+}
+
+.sidebar {
+    justify-content: space-between;
+}
+
+.sidebar img {
+    width: 100px;
+}
+
+.sidebar button {
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(42deg, #F65730 100%, #F65730 0.01%);
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-bottom: -15px;
+    border: 1.5px solid #F65730;
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background: inherit;
+
+    .fa-xmark {
+        color: #F65730;
+    }
+}
+
+.sidebar a {
+    padding: 10px 0;
+}
+
+aside ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+aside ul li {
+    margin: 15px 0;
+}
+
+aside ul li a {
+    color: white;
+    transition: 500ms;
+    padding: 10px 0;
+}
+
+aside li a {
+    color: white;
+    transition: 500ms;
+    padding: 10px 0;
+}
+
+/* Navigation text */
+aside div ul {
+    font-weight: 400;
+    color: white;
+    font-style: bold;
+    font-family: 'Arial Narrow Bold';
+}
+
+/*aside div ul li a.active{
+    color: #F65730;
+}*/
+.pages,
+aside div ul li:is(:hover, :active, :focus-visible) {
+    color: #F65730;
+    transform: 500ms;
+    cursor: pointer;
+}
+
+aside .pages {
+    font-weight: 500;
+    color: white;
+    margin: 11px 0 7px 0;
+}
+
+aside .pages:hover {
+    color: #F65730;
+    ;
+}
+
+.collapse-btn {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.collapse-btn i {
+    padding: 7px 8px;
+}
+
+.collapse-btn i:hover {
+    border: 1px solid #F65730;
+}
+
+.carret_collapse {
+    margin: -52px 0 0 0;
+    height: 45px;
+}
+
+.collapse {
+    position: absolute;
+    padding: 30px;
+    z-index: 9;
+    display: none;
+}
+
+.collapse {
+    display: block;
+    width: 220px;
+    padding: 15px 0 15px 0;
+    border-radius: 10px;
+    background-color: #302E2C;
+    margin-left: -30px;
+}
+
+.collapse li {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: white;
+    width: 100%;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#pages {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.35s ease;
+}
+
+.show {
+    height: 100% !important;
+    transition: height 0.35s ease;
+}
+
+
+/* Search bar */
+#searchbar {
+    background-color: #000000a6;
+    width: 100%;
+    height: 0;
+    position: fixed;
+    display: flex;
+    z-index: 2;
+    border-radius: 0px;
+    bottom: 0;
+    transition: all 0.5s ease;
+}
+
+#searchbar div:first-child {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    right: 0;
+    background-color: linear-gradient(42deg, #F65730 100%, #F65730 0.01%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25em;
+    border: 1.5px solid #F65730;
+    color: white;
+    margin: 30px;
+    cursor: pointer;
+}
+
+#searchbar div:first-child:hover {
+    background: inherit;
+
+    .fa-xmark {
+        color: #F65730;
+    }
+}
+
+#searchbar form {
+    border-radius: 50px;
+    border: 1px solid #F65730;
+    background: #4a4a4a;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#searchbar form input {
+    border-radius: 50px;
+    background: #4a4a4a;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+}
+
+#searchbar form button {
+    position: relative;
+    width: auto;
+    height: 44px;
+    font-weight: bold;
+    background-color: linear-gradient(45deg, #F65730, #646262);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 1.5px solid #F65730;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+#searchbar form button:hover {
+    background: #4a4a4a;
+    color: #f86f4d;
+}
+
+/* Hero Section */
+.main-page {
+    /*background-color: #000000a6;*/
+    background: rgba(0, 0, 0, 0.5);
+
+    width: 100%;
+    height: 109vh;
+    display: flex;
+    border-radius: 0px;
+    bottom: 0;
+    transition: all 0.5s ease;
+}
+
+.hero {
+    padding: 20px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.64)100%, rgba(0, 0, 0, 0.5)50%), url(/resources/background-image.jpeg);
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    line-height: 55px;
+    padding-top: 0px;
+    text-align: start;
+    margin: 0px 30px;
+    /*animation:pulsate 1.5s ease;
+    animation-iteration-count:infinite;*/
+}
+
+.hero h1 span {
+    font-size: 3.5rem;
+    color: #F65730;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1, 1)
+    }
+
+    50% {
+        transform: scale(1.2, 1.2)
+    }
+
+    100% {
+        transform: scale(1, 1)
+    }
+}
+
+.hero .elip-image {
+    margin-left: -500px;
+    text-align: start;
+}
+
+.hero p {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #ffffff;
+    padding-top: 20px;
+    text-align: start;
+    margin: 0px 30px;
+}
+
+.exclusive-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 20px;
+    padding-left: 150px;
+    padding: 0 150px;
+    background-color: #64626200;
+}
+
+.exclusive-services h2 {
+    font-size: 20px;
+    color: white;
+    font-family: 'Oregano', cursive;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: start;
+    margin-left: 50px;
+}
+
+.exclusive-services img {
+    width: 100px;
+    margin-left: 50px;
+    margin-top: -15px;
+}
+
+.exclusive-services ul {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.exclusive-services ul img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: -10px;
+    margin-left: -60px;
+}
+
+.exclusive-services ul li {
+    margin: 10px 50px;
+    padding-left: 20px;
+    text-align: start;
+    text-indent: -20px;
+    color: #c9c3c3;
+    text-align: start;
+}
+
+/* CTA Section */
+.cta {
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 120px;
+    margin-top: 20px;
+    background-color: #ff440050;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.cta .cta-btn {
+    padding: 5px 20px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 1.5px solid #F65730;
+    cursor: pointer;
+    margin: 0px 25px;
+    transition: 0.5s;
+}
+
+.cta .cta-btn:hover {
+    background: inherit;
+    border: 1.5px solid #ffffff;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Footer Section */
+.footer {
+    padding: 20px;
+    background-color: #302E2C;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: normal;
+    gap: 20px;
+}
+
+.footer-container .top-items-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: normal;
+    gap: 20px;
+}
+
+.footer-container h5 {
+    margin-bottom: 10px;
+}
+
+.footer-container ul {
+    list-style: none;
+}
+
+.footer-container a {
+    color: rgb(212, 212, 212);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-container a:hover {
+    color: #F65730;
+    transition: 0.5s;
+}
+
+.footer-container .consultation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background-color: #4a4a4a;*/
+    width: auto;
+    height: fit-content;
+    top: 0;
+    overflow-x: visible;
+    transition: 0.5s;
+    padding: 10px 20px 20px 20px;
+}
+
+.footer-container .consultation p {
+    position: relative;
+    font-size: 12px;
+    padding-top: 10px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.footer-container .consultation button {
+    margin-top: 20px;
+}
+
+.footer-container .company-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /*background-color: #4a4a4a;*/
+    width: 160px;
+    height: fit-content;
+    top: 0;
+    overflow-x: visible;
+    transition: 0.5s;
+    padding: 10px 20px 20px 20px;
+}
+
+.footer-container .company-info:hover {
+    h5 {
+        text-underline-position: -2;
+        text-underline-offset: -2;
+        border-bottom: 4px solid #F65730;
+    }
+}
+
+.footer-container .services {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /*background-color: #4a4a4a;*/
+    width: max-content;
+    height: fit-content;
+    top: 0;
+    overflow-x: visible;
+    transition: 0.5s all ease-in-out;
+    padding: 10px 20px 20px 20px;
+    /*cursor: pointer;*/
+}
+
+.footer-container .services:hover {
+    h5 {
+        border-bottom: 4px solid #F65730;
+    }
+}
+
+
+
+.footer-container .newsletter {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /*background-color: #4a4a4a;*/
+    width: 200px;
+    height: fit-content;
+    top: 0;
+    overflow-x: visible;
+    transition: 0.5s;
+    padding: 10px 20px 20px 20px;
+}
+
+.footer-container .newsletter:hover,
+.footer-faq-section:hover {
+    h5 {
+        border-bottom: 4px solid #F65730;
+    }
+}
+
+/*.footer-container .newsletter form{
+    border-radius: 50px;
+    border: 1px solid #F65730;
+    background: #4a4a4a;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}*/
+
+.footer-container .newsletter input {
+    border-radius: 50px;
+    background: #4a4a4a;
+    border: none;
+    outline: none;
+    padding: 5px 20px;
+    color: white;
+    font-size: 12px;
+    width: 100%;
+    border: 1px solid #7D8489;
+}
+
+.footer-container .newsletter button,
+.footer-faq-section button {
+    margin-top: 20px;
+}
+
+.footer-container .footer-faq-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /*background-color: #4a4a4a;*/
+    width: 200px;
+    height: fit-content;
+    top: 0;
+    overflow-x: visible;
+    transition: 0.5s;
+    padding: 10px 20px 20px 20px;
+}
+
+.footer-container .footer-faq-section h5 {
+    margin-top: 20px;
+}
+
+.footer-container .footer-faq-section p {
+    font-size: 12px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin-bottom: 10px;
+}
+
+.footer-bottom .social-icons a {
+    margin: 10px;
+    font-size: 25px;
+    color: #F65730;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.footer-bottom .social-icons a:hover {
+    color: white;
+    transform: scale(o.8);
+    /*box-shadow: 0px 0px 5px rgba(246, 87, 48, 1);*/
+}
+
+.footer-bottom .footer-text-follow-us {
+    font-family: "DM Sans";
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.footer-bottom .footer-text-copyright {
+    margin-top: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.footer-bottom .footer-text-copyright a {
+    line-height: 1.6;
+    font-size: 20px;
+    color: #4ABC4F;
+    font-weight: bolder;
+}
+
+.footer-bottom .footer-text-copyright a:hover {
+    color: #F65730;
+}
+
+
+/*  Page Sections ---------------------------------------------------------------------------------------------*/
+body main .contact-section,
+body main .contact-section a {
+    width: 100%;
+    height: 109vh;
+    display: flex;
+    border-radius: 0px;
+    bottom: 0;
+    transition: all 0.5s ease;
+}
+
+body .contact-main {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    margin: 30px 70px;
+    background: linear-gradient(42deg, #F65730 100%, #f3b3a3 0.100%);
+    background-color: linear-gradient(45deg, rgb(0, 0, 0)100%, rgb(0, 0, 0)50%);
+}
+/***********************************************************************************
+************************************************************************************
+ **************************      Contact Page Syles     ****************************
+ ***********************************************************************************
+ ***********************************************************************************/
+body section .contact-countainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 20px 30px;
+}
+
+body section .contact-countainer .header-text-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+body section .contact-countainer img {
+    width: 300px;
+    margin-left: 30px;
+}
+
+body section .contact-countainer p {
+    font-size: medium;
+    font-family: "DM Sans";
+    font-weight: 500;
+    color: white;
+    margin-top: 10px;
+    margin-left: 40px;
+    width: 500px;
+    text-align: left;
+}
+
+body section .contact-countainer .contact-inner-container {
+    margin: 30px 100px 10px 100px;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to left, #646464, #4D4C4B);
+    height: max-content;
+    border: 1.5px solid #7D8489;
+    border-radius: 10px;
+    justify-content: left;
+}
+
+body section .contact-countainer .contact-inner-container .left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 5px 10px;
+    width: 250px;
+}
+
+body section .contact-countainer .contact-inner-container .left-column p {
+    font-size: 20px;
+    color: white;
+    font-family: 'Oregano', cursive;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: start;
+    margin-left: 50px;
+}
+
+body section .contact-countainer .contact-inner-container .left-column img {
+    width: 80px;
+    margin-left: 50px;
+    margin-top: -5px;
+}
+
+body section .contact-countainer .contact-inner-container .left-column form {
+    margin: 5px 20px;
+}
+
+body section .contact-countainer .contact-inner-container .left-column form label {
+    margin: 5px;
+}
+
+body section .contact-countainer .contact-inner-container .left-column form button {
+    font-size: 13px;
+    font-weight: bold;
+    width: 150px;
+    margin: 40px 0 10px 0;
+    height: 30px;
+    color: white;
+}
+
+body section .contact-countainer .contact-inner-container .left-column form button:hover {
+    color: #F65730;
+    background: inherit;
+    border: 1.5px solid #F65730;
+}
+
+
+
+body section .contact-countainer .contact-inner-container .right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 5px 10px;
+    width: fit-content;
+}
+
+body section .contact-countainer .contact-inner-container .right-column textarea {
+    margin: 83px 0 0 0;
+    width: max-content;
+    min-width: 300px;
+    max-width: 402px;
+    max-height: 172px;
+    min-height: 150px;
+    height: 100px;
+    color: white;
+    padding: 5px;
+}
+
+body section .contact-countainer .contact-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px 50px 10px 50px;
+    width: 800px;
+}
+
+body section .contact-countainer .contact-footer p {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 7px 5px;
+}
+
+body section .contact-countainer .contact-footer span {
+    font-size: 10px;
+    font-weight: lighter;
+    margin-left: 10px;
+}
+
+body section .contact-countainer .contact-footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 265px;
+}
+
+body section .contact-countainer .contact-footer div p {
+    margin: 7px 5px;
+}
+
+body section .contact-countainer .contact-footer div a {
+    color: #F65730;
+    margin: 5px 5px;
+}
+
+body section .contact-countainer .contact-footer div a:hover {
+    color: #4ABC4F;
+    margin: 5px 5px;
+}
+
+.footer-bottom .video {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.footer-bottom .wrapper {
+    display: table;
+    width: auto;
+    position: relative;
+    width: 50%;
+}
+
+/**************************      Appointment Page Syles     ****************************/
+#btnCloseApointment {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25em;
+    border: 1.5px solid #F65730;
+    color: white;
+    margin: 30px;
+    cursor: pointer;
+}
+
+#btnCloseApointment:hover{
+    border: 1.5px solid #F65730;
+    background: inherit;
+    color: #F65730;
+}
+
+.background-tint-black .appointment-layout {
+    width: fit-content;
+    height: fit-content;
+    margin: 100px 150px;
+}
+
+.background-tint-black .appointment-layout .h-layout {
+    width: fit-content;
+    margin: 10px;
+}
+
+.background-tint-black .appointment-layout .v-layout {
+    width: fit-content;
+    margin: 10px;
+}
+
+.background-tint-black .appointment-layout .myhlayout {
+    width: fit-content;
+    margin: 10px;
+    background-color: #646262;
+}
+
+.background-tint-black .appointment-layout .myhlayout .left-column {
+    width: 270px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #737373;
+    padding: 10px;
+    border: 1.5px solid #7D8489;
+    border-radius: 10px;
+}
+
+.background-tint-black .appointment-layout .myhlayout .left-column img {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.background-tint-black .appointment-layout .myhlayout .left-column #appointee-name{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.background-tint-black .appointment-layout .myhlayout .left-column p{
+    font-family: "DM Sans";
+    font-size: 12px;
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.background-tint-black .appointment-layout .myhlayout .left-column .experience{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #D95636;
+    margin-top: 10px;
+    padding: 7px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.background-tint-black .appointment-layout .myhlayout .left-column .experience p{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.background-tint-black .appointment-layout .myhlayout .right-column {
+    width: 270px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #737373;
+    padding: 10px;
+    border: 1.5px solid #7D8489;
+    border-radius: 10px;
+}
+
+.background-tint-black .appointment-layout .myhlayout .right-column .form-section{
+    width: 100%;
+    height: 100%;
+}
+
+.background-tint-black .appointment-layout .myhlayout .right-column .form-section label{
+    margin: 2.6px;
+}
+.background-tint-black .appointment-layout .myhlayout .right-column .form-section input{
+    width: 100%;
+}
+
+.background-tint-black .appointment-layout .h-layout .left-column-time {
+    width: 270px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background: #737373;
+    padding: 10px;
+    border: 1.5px solid #7D8489;
+    border-radius: 10px;
+}
+
+.background-tint-black .appointment-layout .h-layout .left-col-time p{
+    font-size: 12px;
+    font-family: "IBM Plex Sans hebrew";
+    font-weight: lighter;
+    color: #FFFFFF;
+}
+
+.background-tint-black .appointment-layout .h-layout .left-col-time .time-layout{
+    width: 270px;
+    padding: 10px;
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px;
+}
+
+.background-tint-black .appointment-layout .h-layout .left-col-time .time-layout div:hover{
+    box-shadow: 0 4px 8px rgba(246, 87, 48, 0.9);
+    border-color: rgb(251, 150, 125);
+}
+
+.background-tint-black .appointment-layout .h-layout .left-col-time .time-layout div{
+    padding:3.5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.background-tint-black .appointment-layout .h-layout .left-col-time .time-layout div p{
+    font-size: 10px;
+    font-family: "IBM Plex Sans hebrew";
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.background-tint-black .appointment-layout .h-layout .left-col-time .time-layout div p:hover{
+    color: rgb(251, 150, 125);
+    font-weight: bolder;
+}
+
+.background-tint-black .appointment-layout .h-layout .right-col-message {
+    width: 270px;
+    padding: 10px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.background-tint-black .appointment-layout .h-layout .right-col-message label{
+    margin-top: -10px;
+}
+.background-tint-black .appointment-layout .h-layout .right-col-message textarea{
+    margin-top: 10px;
+    max-width: 270px;
+    min-width: 260px;
+}
+
+.background-tint-black .appointment-layout .h-layout .right-col-message .experience{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #D95636;
+    margin-top: 10px;
+    padding: 7px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.background-tint-black .appointment-layout .h-layout .right-col-message .experience p{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Responsiveness of the Appointment Section */
+@media screen and (max-width: 880px) {
+    .background-tint-black .appointment-layout .myhlayout,
+    .background-tint-black .appointment-layout .second-row {
+        flex-direction: column !important;
+    }
+    body section .contact-countainer .contact-inner-container {
+        margin: 30px 10px 10px 10px;
+    }
+    .navbar-toggler {
+        display: block !important;
+    }
+
+    .navbar-nav,
+    .search-bar,
+    .nav-right {
+        display: none !important;
+    }
+
+    .container-nav {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+/**********************************************************************************************************
+/*------------------------------------------- FAQ Section ------------------------------------------------*/
+.background-tint-black .appointment-layout .center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.background-tint-black .faqSection {
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.background-tint-black .button-close{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    right: 0;
+    height: 45px;
+    margin: 30px 30px;
+}
+#btnCloseFAQs{
+    right: 0;
+}
+
+.background-tint-black .button-close:hover{
+    background: inherit;
+    .fa-xmark:hover{
+        color:#F65730
+    }
+}
+
+.background-tint-black .button-close .fa-xmark{
+    color:white
+}
+
+.background-tint-black .appointment-layout .center h4{
+    margin: 20px 0 0;
+    font-size: 20px;
+    color: white;
+    font-family: 'Oregano', cursive;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+}
+
+.background-tint-black .appointment-layout .center img{
+    width: 50px;
+    color: white;
+}
+
+.background-tint-black .appointment-layout .sub-heading-faq{
+    font-size:17px;
+    font-family: "IBM Plex Sans hebrew";
+    font-weight: 500;
+    color: #FFFFFF;
+    margin: 4px 30px;
+}
+
+.background-tint-black .appointment-layout .quesion-faq{
+    font-size:13px;
+    font-family: "IBM Plex Sans hebrew";
+    font-weight: 500;
+    color: #FFFFFF;
+    margin: 4px 30px 4px 50px;
+}
+
+.background-tint-black .appointment-layout .anwer-faq{
+    font-size:13px;
+    font-family: "IBM Plex Sans hebrew";
+    font-weight: 500;
+    color: #CDCDCD;
+    margin: 4px 30px 4px 60px;
+}
+
+.background-tint-black .appointment-layout .button-submit{
+    display: flex;
+    background: #F65730;
+    width: 150px;
+    justify-content: center;
+    margin: 10px 60px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.background-tint-black .appointment-layout .button-submit p{
+    font-size:13px;
+    font-family: "IBM Plex Sans hebrew";
+    font-weight: bold;
+    color: #ffffff;
+    margin: 4px 4px;
+}
+.background-tint-black .appointment-layout .button-submit:hover{
+    border: 1.5px solid #F65730;
+    background: inherit;
+    transition: all 0.5s ease;
+    p:hover{
+        color: #F65730;
+    }
+}
+
+.background-tint-black .appointment-layout .h-layout{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    color: #737373;
+    height: 0px;
+    overflow: hidden;
+}
+
+.background-tint-black .appointment-layout .h-layout .left-col{
+    margin: 0 50px;
+}
+
+.background-tint-black .appointment-layout .h-layout .v-layout form{
+    width: 200px;
+}
+
+.background-tint-black .appointment-layout .h-layout .v-layout form input{
+    width: 100%;
+}
+
+.background-tint-black .appointment-layout .h-layout .right-col{
+    margin: 0 0;
+}
+
+.background-tint-black .appointment-layout .h-layout .right-col textarea{
+    width: 275px;
+    min-width: 275px;
+    max-width: 435px;
+    max-height: 115px;
+    height: 115px;
+    min-height: 115px;
+    padding: 10px;
+}
+
+.background-tint-black .appointment-layout .submit-button{
+    display: flex;
+    background: #F65730;
+    width: 150px;
+    justify-content: center;
+    margin: 10px 60px 50px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    height: 0px;
+    overflow: hidden;
+}
+
+.background-tint-black .appointment-layout .submit-button p{
+    font-size:13px;
+    font-family: "IBM Plex Sans hebrew";
+    font-weight: bold;
+    color: #ffffff;
+    margin: 4px 4px;
+}
+.background-tint-black .appointment-layout .submit-button:hover{
+    border: 1.5px solid #F65730;
+    background: inherit;
+    transition: all 0.5s ease;
+    p:hover{
+        color: #F65730;
+    }
+}
+
+/* Responsiveness of the FAQ Section */
+@media screen and (max-width: 880px) {
+    .background-tint-black .appointment-layout .h-layout{
+        flex-direction: column !important;
+    }
+
+    .background-tint-black .appointment-layout .h-layout .right-col{
+        margin: 0 50px !important;
+    }
+}
+
+.footer-bottom .playpause {
+    background-image: url(http://png-4.findicons.com/files/icons/2315/default_icon/256/media_play_pause_resume.png);
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    margin: auto;
+    background-size: contain;
+    background-position: center;
+}

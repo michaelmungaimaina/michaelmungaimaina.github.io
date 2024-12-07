@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home - Landing</title>
+  <title>Contact Us</title>
 
   <!-- Logo Icon-->
   <link rel="shortcut icon" href="resources/logo.svg" type="image/x-icon" />
 
   <!-- link css -->
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/easy.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/easy.css" />
 
   <!-- Scroll cdn -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -46,12 +46,12 @@
             </button>
             <!-- Menu -->
             <ul class="navbar-nav flex">
-              <li><a href="/" class="nav-link active">Home</a></li>
+              <li><a href="/index.html" class="nav-link">Home</a></li>
               <li><a href="/" class="nav-link">About Us</a></li>
               <li><a href="/" class="nav-link">Our Services</a></li>
               <li><a href="/" class="nav-link">Blog</a></li>
               <li>
-                <a href="../pages/contact.html" class="nav-link">Contact Us</a>
+                <a href="/" class="nav-link active">Contact Us</a>
               </li>
               <li class="dropdown">
                 <a href="/" class="nav-link dropdown-toggle">Pages
@@ -90,11 +90,9 @@
           <!-- Side Menus -->
           <div>
             <ul>
-              <li><a href="/" class="nav-link active">Home</a></li>
+              <li><a href="../index.html" class="nav-link">Home</a></li>
               <li><a href="/" class="nav-link">About Us</a></li>
-              <li>
-                <a href="../pages/contact.html" class="nav-link">Contact Us</a>
-              </li>
+              <li><a href="/" class="nav-link active">Contact Us</a></li>
               <li><a href="/" class="pages">Our Services</a></li>
               <li class="collapse-btn">
                 <a href="/" class="nav-link carret_collapse" data-bs-toggle="collapse">
@@ -134,118 +132,14 @@
     </div>
   </div>
 
-  <!-- Hero Section -->
+  <!-------------------------------- Hero Section --------------------------------------->
 
-  <section class="hero">
-    <h1>
-      Powering <span class="one">Real Estate Businesses</span> with
-      <span class="one"> HI-ROI</span> Digital Marketing And Other Business.
-    </h1>
-    <img class="elip-image" src="/resources/elipsis-line.png" alt="" />
-    <p>
-      Boost your lead generation, reduce ad costs, and grow your real estate
-      business with tailored ad strategies across all platforms.
-    </p>
-    <p>
-      Welcome to AdConnect, where we specialize in crafting targeted social
-      media advertising campaigns tailored for real estate companies. With
-      over four years of experience, we've empowered numerous clients to
-      elevate their online presence and convert leads into sales.
-    </p>
-
-    <div class="exclusive-services">
-      <h2>Exclusive Services</h2>
-      <img src="/resources/base-line.png" alt="" />
-      <ul>
-        <li>
-          <img src="/resources/checked.png" alt="" />
-          Targeted Advertising with tailored campaigns designed to reach your
-          specific audience
-        </li>
-        <li>
-          <img src="/resources/checked.png" alt="" />
-          Lead Generation strategies to capture and nurture high-quality leads
-        </li>
-        <li>
-          <img src="/resources/checked.png" alt="" />
-          Performance Tracking with detailed analytics to optimize your
-          campaigns for maximum ROI
-        </li>
-        <li>
-          <img src="/resources/checked.png" alt="" /> Our services are both
-          local and international
-        </li>
-      </ul>
-    </div>
-
-    <div class="cta">
-      <h4>Ready to transform your real estate business?</h4>
-      <button class="btn_hover1 cta-btn" onclick="contactUs()">
-        Watch Our Free Strategy
-      </button>
-    </div>
-  </section>
-
-  <!---------------------------------------- FAQ Section -------------------------------------------->
-  <section id="faqsSection" class="background-tint-black faqSection">
-    <div id="btnCloseFAQs" class="btn_hover1 button-close" onclick="closeFAQs()">
-      <i class="fa-solid fa-xmark"></i>
-    </div>
-    <div class="appointment-layout outer-container">
-      <div class="center">
-        <h4 class="title-faqs">FAQS</h4>
-        <img src="/resources/base-line.png" alt="" class="underline-faq" />
-      </div>
-      <p class="sub-heading-faq">Answers to Your Most Common Questions</p>
-      <p class="quesion-faq">
-        Q. How long before I see results with your services?
-      </p>
-      <p class="anwer-faq">
-        A. Every client is different, but our targeted strategies deliver
-        noticeable improvements within the first few months.
-      </p>
-      <p class="quesion-faq">Q. Do you offer ongoing support?</p>
-      <p class="anwer-faq">
-        A. Absolutely! We’re here for the long term, providing continuous
-        support and updates.
-      </p>
-      <p class="quesion-faq">Q. Is there a minimum contract length?</p>
-      <p class="anwer-faq">
-        A. We offer flexible terms designed to fit your needs.
-      </p>
-      <p class="sub-heading-faq">Got more questions? We’re here to help!</p>
-      <div id="showFAQsForm" onclick="openFAQsForm()" class="button-submit">
-        <p>ASK US ANYTHING</p>
-      </div>
-      <div id="FAQsForm" class="h-layout">
-        <div class="v-layout left-col">
-          <form action="submit" class="form-section">
-            <label for="name" class="label">Full Name</label>
-            <input type="text" class="input-field" placeholder="Your Name Here" />
-            <label for="email" class="label">Email</label>
-            <input type="email" class="input-field" placeholder="Your Email Here" />
-            <label for="phone" class="label">Phone Number</label>
-            <input type="phone" class="input-field" placeholder="Your Phone Here" />
-          </form>
-        </div>
-        <div class="v-layout right-col">
-          <label for="message" class="label">Your Question(s)</label>
-          <textarea name="message" id="question" class="input-field" placeholder="Your Question Here"></textarea>
-        </div>
-      </div>
-      <div id="submitFAQsFormButton" onclick="submitFAQsForm()" class="submit-button">
-        <p>SEND</p>
-      </div>
-    </div>
-  </section>
-
-  <!------------------------------------  Lead Capture Section  ------------------------------------------
-  <section class="background-tint-black  lead-capture">
+  <section class="hero-sec-trasparent contact">
     <div class="outer-container contact-countainer">
       <div class="header-text-layout">
         <div class="slash-rect"></div>
         <h4 id="contactHeader" class="header-text">
-          Lead Capture
+          Let's Grow Your Real Estate Business Together
         </h4>
       </div>
       <img src="/resources/elipsis-line.png" alt="elipsis-line" />
@@ -253,10 +147,163 @@
         Ready to elevate your real estate business with targeted social media
         advertising? We’d love to hear from you!
       </p>
+      <div class="contact-inner-container">
+        <div class="left-column">
+          <p>Fill the Form</p>
+          <img src="/resources/base-line.png" alt="image" />
+          <form class="form-section" action="input">
+            <label for="name" class="label">Enter Name</label>
+            <input type="text" name="name" class="input-field" placeholder="Enter Your Name Here!" />
+            <label for="email" class="label">Enter Email</label>
+            <input type="email" name="email" class="input-field" placeholder="example@example.com" />
+            <label for="phone" class="label">Enter Phone Number</label>
+            <input type="phone" name="phone" class="input-field" placeholder="OXXX XXX XXX" />
+            <button type="submit" class="btn_hover1 contact-submit-button">
+              SUBMIT
+            </button>
+          </form>
+        </div>
+        <div class="right-column">
+          <form class="form-section" action="input">
+            <textarea name="message" class="input-field message" placeholder="Your Message"></textarea>
+          </form>
+        </div>
       </div>
-      </section -->
+      <div class="contact-footer">
+        <p>Email Us On: <span>info@adconnect.co.ke</span></p>
+        <p>Cal Us On: <span>+254 790 064 130</span></p>
+        <div class="follow">
+          <p>Follow Us On:</p>
+          <div>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-------------------------------------- Footer Section ------------------------------------------>
+  <!---------------------------------------- Appointment Section -------------------------------------------->
+  <section class="background-tint-black">
+    <div id="btnCloseApointment" class="btn_hover1">
+      <i class="fa-solid fa-xmark" onclick="closeAppointment()"></i>
+    </div>
+    <div class="appointment-layout outer-container">
+      <div class="h-layout">
+        <div class="slash-rect"></div>
+        <p class="header-text">Book an Appointment</p>
+      </div>
+      <div class="h-layout myhlayout"><!-- Start H-Layout-->
+        <div class="v-layout left-column">
+          <img id="appointeeIcon" src="/resources/misgina.png" alt="image"/>
+          <p id="appointee-name">Mr. Misgina Fitwi</p>
+          <p id="appointee-designation">Digital Marketing Specialist</p>
+          <p id="appointee-school">
+            BCS Digital Marketing at Oslo Kristiania University (Norway)
+          </p>
+          <div class="experience">
+            <p>Total Experience</p>
+            <p id="yearsOfExperience">5+ Years</p>
+          </div>
+        </div>
+        <div class="v-layout right-column">
+          <form action="" class="form-section">
+            <label for="name" class="label">Enter Your Name</label>
+            <input id="appointeeName" type="text" class="input-field" placeholder="Enter Your Name Here" />
+            <label for="email" class="label">Enter Your Email</label>
+            <input id="appointeeEmail" type="email" class="input-field" placeholder="Enter Your Email Here" />
+            <label for="phone" class="label">Enter Your Phone Number</label>
+            <input id="appointeePhone" type="phone" class="input-field" placeholder="Enter Your Phone Number Here" />
+            <label for="location" class="label">Enter Your Location</label>
+            <input id="appointeeLocation" type="text" class="input-field"
+              placeholder="Enter Your Current Location Here" />
+            <label for="date" class="label">Select Date</label>
+            <input id="appointeeDate" type="date" class="input-field" placeholder="Select Date" />
+          </form>
+        </div>
+      </div>
+      <div class="h-layout second-row">
+        <div class="v-layout left-col-time">
+          <p>Available Dates</p>
+          <!--Time Selection-->
+          <div class="grey-bordered time-layout">
+            <div id="eit" class="grey-bordered">
+              <p>08.30 AM <br>09.00 AM</p>
+            </div>
+            <div id="nine" class="grey-bordered">
+              <p>09.15 AM <br>09.45 AM</p>
+            </div>
+            <div id="ten" class="grey-bordered">
+              <p>10.15 AM <br>10.45 AM</p>
+            </div>
+            <div id="eleven" class="grey-bordered">
+              <p>11.00 AM <br>11.30 AM</p>
+            </div>
+            <div id="twelve" class="grey-bordered">
+              <p>11.45 AM <br>12.15 PM</p>
+            </div>
+            <div id="noon" class="grey-bordered">
+              <p>12.30 AM <br>01.00 PM</p>
+            </div>
+            <div id="one" class="grey-bordered">
+              <p>01.30 PM <br>02.00 PM</p>
+            </div>
+            <div id="two" class="grey-bordered">
+              <p>02.15 PM <br>02.45 PM</p>
+            </div>
+            <div id="three" class="grey-bordered">
+              <p>03.00 PM <br>03.30 PM</p>
+            </div>
+            <div id="four" class="grey-bordered">
+              <p>03.45 PM <br>04.15 PM</p>
+            </div>
+            <div id="four30" class="grey-bordered">
+              <p>04.30 PM <br>05.00 PM</p>
+            </div>
+            <div id="five" class="grey-bordered">
+              <p>05.15 PM <br>05.45 PM</p>
+            </div>
+            <div id="six" class="grey-bordered">
+              <p>06.00 PM <br>06.30 PM</p>
+            </div>
+            <div id="six45" class="grey-bordered">
+              <p>06.45 PM <br>07.15 PM</p>
+            </div>
+            <div id="seven" class="grey-bordered">
+              <p>07.30 PM <br>08.00 PM</p>
+            </div>
+            <div id="eightPm" class="grey-bordered">
+              <p>08.15 PM <br>08.45 PM</p>
+            </div>
+            <div id="ninePm" class="grey-bordered">
+              <p>09.00 PM <br>09.30 PM</p>
+            </div>
+            <div id="tenPm" class="grey-bordered">
+              <p>09.45 PM <br>10.15 PM</p>
+            </div>
+            <div id="ten30Pm" class="grey-bordered">
+              <p>10.30 PM <br>11.00 PM</p>
+            </div>
+            <div id="elevenPm" class="grey-bordered">
+              <p>11.15 PM <br>11.45 PM</p>
+            </div>
+          </div>
+        </div>
+        <div class="v-layout right-col-message">
+          <label for="message" class="label">Additional Message</label>
+          <textarea id="appointeeMessage" type="text" class="input-field message" placeholder="Your Appointment Message...">
+          <div class="experience">
+            <p>Book Appointment</p>
+          </div>
+        </div>
+      </div>
+      <!-- End H-Layout-->
+    </div>
+  </section>
+  <!------------------------------------------- Footer Section ---------------------------------------------->
   <footer class="footer">
     <div class="footer-container">
       <div class="top-items-footer">
@@ -310,7 +357,7 @@
             Need a clarification? Ask our Agents for a clarified solution.
             You'll get your clarification as soon as possible
           </p>
-          <button id="showFAQsSection" onclick="openFAQs()"  type="submit" class="btn_hover1 small-button">
+          <button type="submit" class="btn_hover1 small-button">
             VIEW FAQs SECTION
           </button>
         </div>
@@ -330,9 +377,17 @@
         <p class="footer-text-copyright">
           Copyright © 2024 <span><a href="/index.html">AdConnect</a></span>. All rights reserved.
         </p>
+        <div class="wrapper">
+          <video class="video">
+            <source
+              src="http://e14aaeb709f7cde1ae68-a1d0a134a31b545b257b15f8a8ba5726.r70.cf3.rackcdn.com/projects/31432/1427815464209-bf74131a7528d0ea5ce8c0710f530bb5/1280x720.mp4"
+              type="video/mp4" />
+          </video>
+          <div class="playpause"></div>
+        </div>
       </div>
     </div>
-    <!-- End of footer container -->
+    <!-- End of footer contatiner -->
   </footer>
 
   <!-- Scroll animation Lib -->
@@ -364,7 +419,7 @@
     integrity="sha256-DHF4zGyjT760MP8wpeehwoey18z8uiz9864PRu2lVBA=" crossorigin="anonymous"></script>
 
   <!-- Custom JS-->
-  <script src="scripts/main.js"></script>
+  <script src="../scripts/main.js"></script>
 </body>
 
 </html>
