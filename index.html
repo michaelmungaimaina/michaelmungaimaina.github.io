@@ -48,23 +48,18 @@
             <ul class="navbar-nav flex">
               <li><a href="/" class="nav-link active">Home</a></li>
               <li><a href="/" class="nav-link">About Us</a></li>
-              <li><a href="/" class="nav-link">Our Services</a></li>
               <li><a href="/" class="nav-link">Blog</a></li>
               <li>
                 <a href="../pages/contact.html" class="nav-link">Contact Us</a>
               </li>
               <li class="dropdown">
-                <a href="/" class="nav-link dropdown-toggle">Pages
+                <a href="/" class="nav-link dropdown-toggle">Our Services
                   <i class="fa fa-caret-down"></i>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a href="/" class="dropdown-item">Services</a></li>
-                  <li><a href="/" class="dropdown-item">Testimonials</a></li>
-                  <li><a href="/" class="dropdown-item">Portfolio</a></li>
+                  <li><a href="/" class="dropdown-item">Social Media Advertising</a></li>
+                  <li><a href="/" class="dropdown-item">Analytics & Reporting</a></li>
                   <li><a href="/" class="dropdown-item">Courses</a></li>
-                  <li><a href="/" class="dropdown-item">FAQs</a></li>
-                  <li><a href="/" class="dropdown-item">Coming Soon</a></li>
-                  <li><a href="/" class="dropdown-item">404</a></li>
                 </ul>
               </li>
             </ul>
@@ -136,7 +131,7 @@
 
   <!-- Hero Section -->
 
-  <section class="hero">
+  <section id="heroSection" class="hero">
     <h1>
       Powering <span class="one">Real Estate Businesses</span> with
       <span class="one"> HI-ROI</span> Digital Marketing And Other Business.
@@ -180,15 +175,204 @@
 
     <div class="cta">
       <h4>Ready to transform your real estate business?</h4>
-      <button class="btn_hover1 cta-btn" onclick="contactUs()">
+      <button id="btnNavigateToVidStrategy" class="btn_hover1 cta-btn" onclick="openValueVideo()">
         Watch Our Free Strategy
       </button>
     </div>
   </section>
 
+  <!------------------------------------- Value Video Section -------------------------------------------->
+  <section id="valueVideoSection" class="hero-video-section">
+    <h1>
+      <span class="one">5 Proven Strategies</span> to Generate <span>More Real Estate Leads</span> with Digital Ads.
+    </h1>
+    <img class="elip-image" src="/resources/elipsis-line.png" alt="" />
+    <p><span class="one">Discover</span> how to reduce your ad spend and attract <span>higher-quality property
+        leads.</span> Get immediate access to
+      this exclusive 5-minute video.</p>
+    <p class="sub-text">In this exclusive video, I share proven strategies and insights gained from five years of
+      experience
+      in digital marketing for real estate. Learn how to create effective social media ad campaigns that
+      attract clients, generate leads, and ultimately boost your sales.</p>
+    <div class="h-layout">
+      <div>
+        <div class="circle">
+          <img id="btnPauseIcon" onclick="openLeadCaptureSection()" src="/resources/pause.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="lable-bg">
+      <p id="txtOpenLeadcapture" onclick="openLeadCaptureSection()">CLICK to Watch the Free video now and start
+        transforming your business today!</p>
+      <img class="elip-image" src="/resources/base-line.png" alt="" />
+    </div>
+    <p>This <span>free video</span> is available for a <span>limited time.</span> Don’t miss out on
+      these <span>high-ROI strategies</span>!</p>
+  </section>
+
+  <!----------------------------------- Lead Capture Section ---------------------------------------->
+  <section id="leadCaptureSection" class="black-background-tint-lead-capture">
+    <div id="btnCloseLeadCapture" class="btn_hover1" onclick="closeLeadCapture()">
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div class="outer-container">
+      <div class="h-layout">
+        <div class="slash-rect"></div>
+        <p class="header-text">Lead Capture</p>
+      </div>
+      <img class="elipsis" src="/resources/elipsis-line.png" alt="elipsis-line" />
+      <div class="bordered-container">
+        <p>Enter Your Details to Get Our free Strategy</p>
+        <img src="/resources/base-line.png" alt="">
+        <form class="form-section">
+          <div class="h-layout">
+            <div>
+              <label class="label" for="name">Full Name</label>
+              <img src="/resources/starr.png" alt="">
+            </div>
+            <input id="name" type="text" class="input-field" placeholder="John Doe Doe">
+          </div>
+          <div class="h-layout">
+            <div>
+              <label class="label" for="email">Email</label>
+              <img src="/resources/starr.png" alt="">
+            </div>
+            <input id="email" type="email" class="input-field" placeholder="example@example.com">
+          </div>
+          <div class="h-layout">
+            <div>
+              <label class="label" for="phone">Phone Number</label>
+              <img src="/resources/starr.png" alt="">
+            </div>
+            <input id="phone" type="tel" class="input-field" placeholder="0123 456 789">
+          </div>
+          <div class="optional"><!--Optional-->
+            <div class="h-layout">
+              <label class="label" for="company">Company Name</label>
+              <input id="company" type="text" class="input-field" placeholder="AdConnect Limited">
+            </div>
+            <div class="h-layout">
+              <label class="label" for="address">Address</label>
+              <div class="address">
+                <input id="address" type="text" class="input-field" placeholder="Street Adress">
+                <input id="city" type="text" class="input-field" placeholder="City">
+                <input id="state" type="text" class="input-field" placeholder="State / Province">
+                <input id="zipCode" type="text" class="input-field" placeholder="Zip / Postal Code">
+              </div>
+            </div>
+          </div><!-- End Optional-->
+        </form>
+        <p class="privacy-text">Your privacy is 100% Secured. Your details will Never be Shared with Anyone</p>
+        <button id="btnSubmitLeadCapture" class="small-button" onclick="openThankYouPage()">Watch the Free
+          Video</button>
+      </div>
+    </div>
+  </section>
+
+  <!----------------------------------- Thank You Section -------------------------------------------->
+  <section id="thankYouVideoSection" class="black-background-tint-thank-section" style="display: none;">
+    <div class="outer-container">
+      <div class="top-bar">
+        <div class="v-layout">
+          <div class="h-layout">
+            <div class="slash-rect"></div>
+            <p class="header-text">Thank You</p>
+          </div>
+          <img src="/resources/elipsis-line.png" alt="">
+        </div>
+        <div id="btnCloseThanksPage" onclick="closeThankYouPage()">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <h2>Your <span>Free Video</span> is Ready to Watch.</h2>
+      <div class="wrapper">
+        <video class="video" controls>
+          <source src="/resources/value-video.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <p class="foot-text">Want to see how these strategies can generate more property leads for your business? Apply
+        your free consultation below!</p>
+      <button id="btnApplyFreeConsultation">APPLY FOR A FREE CONSULTATION</button>
+    </div>
+  </section>
+
+  <!----------------------------------- Application Form Section -------------------------------------------->
+  <section id="applicationFormSection" class="black-background-tint-thank-section" style="display: none;">
+    <div class="outer-container">
+      <div class="top-bar">
+        <div class="v-layout">
+          <div class="h-layout">
+            <p class="header-text"></p>
+          </div>
+        </div>
+        <div id="btnCloseApplicationForm" onclick="closeThankYouPage()">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <h5 style="color: #ffffff; text-align: center;">
+        Thank you for your interest in transforming your marketing strategy with us!
+        Please take a few moments to answer these questions so we can hit the ground
+        running during our call. The more detailed your answers, the better we can serve you!</h5>
+      <img src="/resources/elipsis-line.png" alt="" style="margin: 5px 100px;">
+      <div class="v-layout">
+        <form id="fname" action="submit" class="form-section">
+          <label for="fname" class="label">What's Your First Name?</label>
+          <input id="firstNameInput" type="text" class="input-field" placeholder="Type Your Name Here ...">
+        </form>
+
+        <form id="lname" action="submit" class="form-section" style="display: none;">
+          <label for="lname" class="label">What's Your Last Name,</label>
+          <input id="lastNameInput" type="text" class="input-field" placeholder="Type Your Last Name Here ...">
+        </form>
+
+        <form id="eaddresss" action="submit" class="form-section" style="display: none;">
+          <label for="eaddress" class="label">What's Your Email Address,</label>
+          <input id="emailAddressInput" type="email" class="input-field" placeholder="example@example.com">
+        </form>
+
+        <form id="phoneNumber" action="submit" class="form-section" style="display: none;">
+          <label for="phone" class="label">What's Your Phone Number,</label>
+          <input id="phoneInput" type="tel" class="input-field" placeholder="(0) 123 456 789">
+        </form>
+
+        <form id="occupation" action="submit" class="form-section" style="display: none;">
+          <label for="occupation" class="label">What’s Your Current Ocupation, and How Long Have You Been in This
+            Role?</label>
+          <input id="occupationInput" type="text" class="input-field" placeholder="Eg, Digital Marketing (etc)">
+        </form>
+
+        <form id="reason" action="submit" class="form-section" style="display: none;">
+          <label for="reason" class="label">What is happening in your company right now that has you considering a
+            change in your marketing approach?</label>
+          <input id="reasonInput" type="text" class="input-field" placeholder="I have been experiencing ...">
+        </form>
+
+        <form id="goal" action="submit" class="form-section" style="display: none;">
+          <label for="goal" class="label">What is your goal with a new marketing strategy, and how many new customers
+            would you like to gain monthly or annually?</label>
+          <input id="goalInput" type="text" class="input-field" placeholder="I have a goal of ...">
+        </form>
+
+        <form id="investment" action="submit" class="form-section" style="display: none;">
+          <label for="investment" class="label">If you were 100% certain you could achieve your goals, how much would
+            you invest directly in making it happen?</label>
+          <input id="investmentInput" type="dropdown" class="input-field" placeholder="Select a Value">
+          <label for="investment" class="label">Congrats! You've completed this form, we’ll review your responses and
+            prepare for your personalized consultation. Click below to send and schedule your call!</label>
+        </form>
+        <div id="h-buttons">
+          <button id="btnLeftApplication" class="btn-class" style="filter: blur(5px);"><img src="/resources/icon-back.png" alt=""
+              style="filter: blur(5px);">OK</button>
+          <button id="btnRightApplication" class="btn-class">NEXT</button>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
   <!---------------------------------------- FAQ Section -------------------------------------------->
-  <section id="faqsSection" class="background-tint-black faqSection">
-    <div id="btnCloseFAQs" class="btn_hover1 button-close" onclick="closeFAQs()">
+  <section id="faqsSection" class="black-background-tint-faq">
+    <div id="btnCloseFAQs" class="btn_hover1" onclick="closeFAQs()">
       <i class="fa-solid fa-xmark"></i>
     </div>
     <div class="appointment-layout outer-container">
@@ -260,7 +444,7 @@
   <footer class="footer">
     <div class="footer-container">
       <div class="top-items-footer">
-        <div class="consultation">
+      <div class="consultation">
           <img src="/resources/help.svg.svg" alt="" class="client-icon" />
           <p class="par-consult">Need Help? Call Us!</p>
           <button type="submit" class="btn_hover1 small-button">
@@ -310,7 +494,7 @@
             Need a clarification? Ask our Agents for a clarified solution.
             You'll get your clarification as soon as possible
           </p>
-          <button id="showFAQsSection" onclick="openFAQs()"  type="submit" class="btn_hover1 small-button">
+          <button id="showFAQsSection" onclick="openFAQs()" type="submit" class="btn_hover1 small-button">
             VIEW FAQs SECTION
           </button>
         </div>

@@ -54,17 +54,13 @@
                 <a href="/" class="nav-link active">Contact Us</a>
               </li>
               <li class="dropdown">
-                <a href="/" class="nav-link dropdown-toggle">Pages
+                <a href="/" class="nav-link dropdown-toggle">Our Services
                   <i class="fa fa-caret-down"></i>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a href="/" class="dropdown-item">Services</a></li>
-                  <li><a href="/" class="dropdown-item">Testimonials</a></li>
-                  <li><a href="/" class="dropdown-item">Portfolio</a></li>
+                  <li><a href="/" class="dropdown-item">Social Media Advertising</a></li>
+                  <li><a href="/" class="dropdown-item">Analytics & Reporting</a></li>
                   <li><a href="/" class="dropdown-item">Courses</a></li>
-                  <li><a href="/" class="dropdown-item">FAQs</a></li>
-                  <li><a href="/" class="dropdown-item">Coming Soon</a></li>
-                  <li><a href="/" class="dropdown-item">404</a></li>
                 </ul>
               </li>
             </ul>
@@ -187,9 +183,9 @@
   </section>
 
   <!---------------------------------------- Appointment Section -------------------------------------------->
-  <section class="background-tint-black">
-    <div id="btnCloseApointment" class="btn_hover1">
-      <i class="fa-solid fa-xmark" onclick="closeAppointment()"></i>
+  <section id="appointmentView" class="background-tint-black">
+    <div id="btnCloseApointment" onclick="closeAppointmentView()" class="btn_hover1" style="position: fixed;">
+      <i class="fa-solid fa-xmark" ></i>
     </div>
     <div class="appointment-layout outer-container">
       <div class="h-layout">
@@ -294,10 +290,10 @@
         </div>
         <div class="v-layout right-col-message">
           <label for="message" class="label">Additional Message</label>
-          <textarea id="appointeeMessage" type="text" class="input-field message" placeholder="Your Appointment Message...">
-          <div class="experience">
-            <p>Book Appointment</p>
-          </div>
+          <textarea id="appointeeMessage" type="text" class="input-field" placeholder="Your Appointment Message..."></textarea>
+            <div id="btnSubmitAppointment" class="experience">
+              <p>Book Appointment</p>
+            </div>
         </div>
       </div>
       <!-- End H-Layout-->
@@ -377,14 +373,6 @@
         <p class="footer-text-copyright">
           Copyright © 2024 <span><a href="/index.html">AdConnect</a></span>. All rights reserved.
         </p>
-        <div class="wrapper">
-          <video class="video">
-            <source
-              src="http://e14aaeb709f7cde1ae68-a1d0a134a31b545b257b15f8a8ba5726.r70.cf3.rackcdn.com/projects/31432/1427815464209-bf74131a7528d0ea5ce8c0710f530bb5/1280x720.mp4"
-              type="video/mp4" />
-          </video>
-          <div class="playpause"></div>
-        </div>
       </div>
     </div>
     <!-- End of footer contatiner -->

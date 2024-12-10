@@ -627,8 +627,10 @@ aside .pages:hover {
     padding: 20px 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.64)100%, rgba(0, 0, 0, 0.5)50%), url(/resources/background-image.jpeg);
     text-align: center;
+    height: 100%;
     background-position: center;
     background-size: cover;
+    transition: height 0.7s ease;
 }
 
 .hero h1 {
@@ -1286,7 +1288,6 @@ body section .contact-countainer .contact-footer div a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #737373;
     padding: 10px;
     border: 1.5px solid #7D8489;
     border-radius: 10px;
@@ -1368,20 +1369,32 @@ body section .contact-countainer .contact-footer div a:hover {
 }
 .background-tint-black .appointment-layout .h-layout .right-col-message textarea{
     margin-top: 10px;
-    max-width: 270px;
-    min-width: 260px;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 220px;
+    min-height: 100px;
+    height: 130px;
+    padding: 10px;
 }
 
 .background-tint-black .appointment-layout .h-layout .right-col-message .experience{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #D95636;
+    background: #F65730;
     margin-top: 10px;
     padding: 7px;
     width: 100%;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in;
+}
+
+.background-tint-black .appointment-layout .h-layout .right-col-message .experience:hover{
+    background: #d95736ae;
+    border: 1.5px solid #D95636;
+    transition: all 0.3s ease-in;
+    .p:hover{ color: #D95636;}
 }
 
 .background-tint-black .appointment-layout .h-layout .right-col-message .experience p{
@@ -1416,8 +1429,573 @@ body section .contact-countainer .contact-footer div a:hover {
 }
 
 /**********************************************************************************************************
+/*-------------------------------------- Value Video Section ---------------------------------------------*/
+#valueVideoSection{
+    padding: 20px 10;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7)100%, rgba(0, 0, 0, 0.5)50%), url(/resources/background-image.jpeg);
+    background-position: center;
+    display: none;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    transition: all 0.7s ease-in-out;
+}
+
+.hero-video-section {
+    padding: 20px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.64)100%, rgba(0, 0, 0, 0.5)50%), url(/resources/background-image.jpeg);
+    text-align: center;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    transition: height 0.7s ease;
+    display: none;
+}
+
+#valueVideoSection span{
+    color: #4ABC4F;
+}
+
+#valueVideoSection h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    line-height: 55px;
+    padding-top: 0px;
+    text-align: start;
+    margin: 0px 30px;
+    /*animation:pulsate 1.5s ease;
+    animation-iteration-count:infinite;*/
+}
+
+#valueVideoSection h1 .one {
+    font-size: 3.5rem;
+    color: #F65730;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+}
+
+#valueVideoSection p {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #ffffff;
+    padding-top: 20px;
+    text-align: start;
+    margin: 0px 30px;
+}
+
+#valueVideoSection .one{
+    color: #F65730;
+}
+
+#valueVideoSection .elip-image {
+    margin-left: -500px;
+    text-align: start;
+}
+
+#valueVideoSection img{
+    width: 400px;
+    left: 50px;
+    margin-top: 10px;
+    height: 3px;
+}
+
+#valueVideoSection .sub-text{
+    font-size: 19px;
+    font-weight: 400;
+}
+
+#valueVideoSection .h-layout{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+}
+
+#valueVideoSection .h-layout div{
+    height: 300px;
+    width: 600px;
+    margin: 10px 20px;
+    border: 0.5px solid #f65830af;
+    border-radius: 8px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8)100%, rgba(0, 0, 0, 0.5)50%), url(/resources/pic-back.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#valueVideoSection .h-layout div .circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: none;
+}
+
+#valueVideoSection .h-layout div .circle img{
+    width: 60px;
+    height: 80px;
+    margin-top: -1px;
+    margin-left: 25px;
+}
+
+#valueVideoSection .h-layout div .circle img:hover{
+    transform: scale(0.8);
+}
+
+#valueVideoSection .lable-bg{
+    margin: 10px 20px;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f658303c;
+}
+
+#valueVideoSection .lable-bg p{
+    animation-name: pulsate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s
+}
+
+#valueVideoSection .lable-bg p:hover{
+    animation-name: none;
+    color: #F65730;
+}
+
+#valueVideoSection .lable-bg img{
+    width: 400px;
+    height: 10px;
+    margin-top: -2px;
+    margin-bottom: 10px;
+}
+
+/* Responsiveness of the Value Video Section */
+@media screen and (max-width: 880px) {
+    #valueVideoSection h1,
+    #valueVideoSection h1 span,
+    #valueVideoSection h1 .one{
+        font-size: 35px;
+    }
+
+    #valueVideoSection img{
+       display: none;
+    }   
+    
+    #valueVideoSection .lable-bg p{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    #valueVideoSection .h-layout div .circle img{
+        display: inline;
+    }
+    
+}
+
+/**********************************************************************************************************
+/*--------------------------------- ----- Thank You Section ----------------------------------------------*/
+#thankYouVideoSection {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    padding: 20px 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(/resources/background-image.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    transition: all 0.7s ease-in-out;
+}
+
+#thankYouVideoSection .outer-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#thankYouVideoSection .outer-container .top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#thankYouVideoSection .outer-container .top-bar .v-layout img {
+    width: 110px;
+}
+
+#thankYouVideoSection h2 {
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+#thankYouVideoSection h2 span {
+    color: #4ABC4F;
+}
+
+#thankYouVideoSection .wrapper {
+    position: relative;
+    margin: 20px auto;
+    border: 1.5px solid #F65730;
+    border-radius: 10px;
+    overflow: hidden;
+    width: fit-content;
+}
+
+#thankYouVideoSection .wrapper video {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+#thankYouVideoSection .foot-text {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin: 20px auto;
+}
+
+#btnApplyFreeConsultation {
+    display: block;
+    margin: 20px auto;
+    background-color: #F65730;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+#btnApplyFreeConsultation:hover {
+    background-color: #d84520;
+}
+
+#btnCloseThanksPage {
+    background: #F65730;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#btnCloseThanksPage:hover {
+    background: inherit;
+    border: 1.5px solid #F65730;
+}
+
+#btnCloseThanksPage i {
+    color: white;
+    font-size: 20px;
+}
+
+/**********************************************************************************************************
+/*--------------------------------- ----- Application Form Section ----------------------------------------------*/
+#applicationFormSection {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    padding: 20px 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(/resources/background-image.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    transition: all 0.7s ease-in-out;
+}
+
+#applicationFormSection .outer-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#btnCloseApplicationForm {
+    background: #F65730;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#btnCloseApplicationForm:hover {
+    background: inherit;
+    border: 1.5px solid #F65730;
+    color: #4ABC4F;
+}
+
+#applicationFormSection form{
+    width: fit-content;
+    margin: 30px 0 0;
+}
+
+#applicationFormSection form label{
+    font-family: 'DM Sans Serif';
+    font-weight: bolder;
+    font-size: 18px;
+    width: fit-content;
+}
+
+#applicationFormSection form input{
+    margin: 10px 0 0 20px;
+    font-size: 13px;
+    width: 300px;
+}
+
+#applicationFormSection .v-layout{
+    align-items: center;
+}
+
+#applicationFormSection #h-buttons{
+    display: flex;
+    height: 53px;
+    width: 400px;
+    flex-direction: row;
+    border: none;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#applicationFormSection button{
+    background-color: rgb(246, 87, 48);
+    height: 50px;
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+    width: fit-content;
+    padding: 3px 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+/**********************************************************************************************************
+/*-------------------------------------- Lead Capture Section --------------------------------------------*/
+#leadCaptureSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #000000a6;
+    width: 100%;
+    height: 0%;
+    position: fixed;
+    z-index: 3;
+    border-radius: 0px;
+    bottom: 0;
+    transition: all 0.5s ease;
+    overflow: scroll;
+}
+
+#btnCloseLeadCapture {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25em;
+    border: 1.5px solid #F65730;
+    color: white;
+    margin: 50px;
+    cursor: pointer;
+}
+
+#btnCloseLeadCapture:hover{
+    border: 1.5px solid #F65730;
+    background: inherit;
+    color: #F65730;
+}
+
+.black-background-tint-lead-capture .outer-container{
+    margin: 50px 100px 10px 100px;
+    display: flex;
+    top: 100px;
+    padding:10px 20px;
+    flex-direction: column;
+    background: linear-gradient(to left, #646464, #4D4C4B);
+    height: max-content;
+    border: 1.5px solid #7D8489;
+    border-radius: 10px;
+    align-items: start;
+}
+
+
+#leadCaptureSection .outer-container .elipsis{
+    width: 100px;
+    height: 2px;
+    margin-left: 20px;
+}
+
+#leadCaptureSection .outer-container .bordered-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1.5px solid #737373;
+    border-radius: 15px;
+    margin: 20px 50px;
+    padding: 20px 50px;
+}
+
+#leadCaptureSection .outer-container .bordered-container p{
+    margin: 20px 0 0;
+    font-size: 12px;
+    color: white;
+    font-family: 'Oregano', cursive;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+}
+
+#leadCaptureSection .outer-container .bordered-container img{
+    width: 200px;
+}
+
+#leadCaptureSection .outer-container .bordered-container .h-layout{
+    width: 250px;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+#leadCaptureSection .outer-container .bordered-container .h-layout div{
+    display: flex;
+    flex-direction: row;
+    align-items: start center;
+    margin-top: 6px;
+
+}
+
+#leadCaptureSection .outer-container .bordered-container img{
+    width: 6px;
+    height: 6px;
+    margin-bottom: 7px;
+}
+
+#leadCaptureSection .outer-container .bordered-container .form-section .optional{
+    margin: 10px 0px 10px -10px;
+    padding: 0 0 0 10px;
+    border: 2.5px dotted #F65730
+}
+#leadCaptureSection .outer-container .bordered-container .form-section .optional .h-layout{
+    margin-right: 10px;
+}
+
+#leadCaptureSection .outer-container .bordered-container .form-section .optional .h-layout .address{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 10px;
+}
+
+#leadCaptureSection .outer-container .bordered-container .form-section .optional .h-layout .address input{
+    display: flex;
+    flex-direction: column;
+    margin: -10px 0 20px 0;
+}
+
+#leadCaptureSection .outer-container .privacy-text{
+    font-size: x-small;
+}
+
+#btnSubmitLeadCapture{
+    position: relative;
+    width: 100%;
+    height: 25px;
+    font-weight: bold;
+    font-size: 10px;
+    background-color: #F65730;
+    justify-content: center;
+    border-radius: 7px;
+    border: 1.5px solid #F65730;
+    color: white;
+    padding: 4px 9px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: right 0.3s ease;
+    text-transform: uppercase;
+}
+
+#btnSubmitLeadCapture:hover{
+    color: #F65730;
+    background: inherit;
+    border: 1.5px solid #F65730;
+    transition: right 0.3s ease;
+}
+
+/* Responsiveness of the Value Video Section */
+@media screen and (max-width: 880px) {
+    #btnCloseLeadCapture {
+        right: 0px;
+        top: 0px;
+        margin: 0px 12px;
+    }
+
+    .black-background-tint-lead-capture .outer-container{
+        width: fit-content;
+        margin: 50px 50px;
+    }
+
+    #leadCaptureSection .outer-container .bordered-container{
+        margin: 20px 20px;
+        padding: 20px 20px;
+    }
+}
+
+
+/**********************************************************************************************************
 /*------------------------------------------- FAQ Section ------------------------------------------------*/
-.background-tint-black .appointment-layout .center{
+.black-background-tint-faq .appointment-layout .center{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1425,14 +2003,14 @@ body section .contact-countainer .contact-footer div a:hover {
     width: 100%;
 }
 
-.background-tint-black .faqSection {
+.black-background-tint-faq .faqSection {
     height: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.background-tint-black .button-close{
+.black-background-tint-faq .button-close{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1443,21 +2021,27 @@ body section .contact-countainer .contact-footer div a:hover {
     margin: 30px 30px;
 }
 #btnCloseFAQs{
-    right: 0;
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25em;
+    border: 1.5px solid #F65730;
+    color: white;
+    margin: 30px;
+    cursor: pointer;
 }
 
-.background-tint-black .button-close:hover{
+#btnCloseFAQs:hover{
+    border: 1.5px solid #F65730;
     background: inherit;
-    .fa-xmark:hover{
-        color:#F65730
-    }
+    color: #F65730;
 }
 
-.background-tint-black .button-close .fa-xmark{
-    color:white
-}
-
-.background-tint-black .appointment-layout .center h4{
+.black-background-tint-faq .appointment-layout .center h4{
     margin: 20px 0 0;
     font-size: 20px;
     color: white;
@@ -1467,12 +2051,18 @@ body section .contact-countainer .contact-footer div a:hover {
     text-align: center;
 }
 
-.background-tint-black .appointment-layout .center img{
+.black-background-tint-faq .appointment-layout {
+    width: fit-content;
+    height: fit-content;
+    margin: 100px 150px;
+}
+
+.black-background-tint-faq .appointment-layout .center img{
     width: 50px;
     color: white;
 }
 
-.background-tint-black .appointment-layout .sub-heading-faq{
+.black-background-tint-faq .appointment-layout .sub-heading-faq{
     font-size:17px;
     font-family: "IBM Plex Sans hebrew";
     font-weight: 500;
@@ -1480,7 +2070,7 @@ body section .contact-countainer .contact-footer div a:hover {
     margin: 4px 30px;
 }
 
-.background-tint-black .appointment-layout .quesion-faq{
+.black-background-tint-faq .appointment-layout .quesion-faq{
     font-size:13px;
     font-family: "IBM Plex Sans hebrew";
     font-weight: 500;
@@ -1488,7 +2078,7 @@ body section .contact-countainer .contact-footer div a:hover {
     margin: 4px 30px 4px 50px;
 }
 
-.background-tint-black .appointment-layout .anwer-faq{
+.black-background-tint-faq .appointment-layout .anwer-faq{
     font-size:13px;
     font-family: "IBM Plex Sans hebrew";
     font-weight: 500;
@@ -1496,7 +2086,7 @@ body section .contact-countainer .contact-footer div a:hover {
     margin: 4px 30px 4px 60px;
 }
 
-.background-tint-black .appointment-layout .button-submit{
+.black-background-tint-faq .appointment-layout #showFAQsForm{
     display: flex;
     background: #F65730;
     width: 150px;
@@ -1506,14 +2096,14 @@ body section .contact-countainer .contact-footer div a:hover {
     transition: all 0.5s ease;
 }
 
-.background-tint-black .appointment-layout .button-submit p{
+.black-background-tint-faq .appointment-layout #showFAQsForm p{
     font-size:13px;
     font-family: "IBM Plex Sans hebrew";
     font-weight: bold;
     color: #ffffff;
     margin: 4px 4px;
 }
-.background-tint-black .appointment-layout .button-submit:hover{
+.black-background-tint-faq .appointment-layout #showFAQsForm:hover{
     border: 1.5px solid #F65730;
     background: inherit;
     transition: all 0.5s ease;
@@ -1522,7 +2112,7 @@ body section .contact-countainer .contact-footer div a:hover {
     }
 }
 
-.background-tint-black .appointment-layout .h-layout{
+.black-background-tint-faq .appointment-layout .h-layout{
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -1531,23 +2121,23 @@ body section .contact-countainer .contact-footer div a:hover {
     overflow: hidden;
 }
 
-.background-tint-black .appointment-layout .h-layout .left-col{
+.black-background-tint-faq .appointment-layout .h-layout .left-col{
     margin: 0 50px;
 }
 
-.background-tint-black .appointment-layout .h-layout .v-layout form{
+.black-background-tint-faq .appointment-layout .h-layout .v-layout form{
     width: 200px;
 }
 
-.background-tint-black .appointment-layout .h-layout .v-layout form input{
+.black-background-tint-faq .appointment-layout .h-layout .v-layout form input{
     width: 100%;
 }
 
-.background-tint-black .appointment-layout .h-layout .right-col{
+.black-background-tint-faq .appointment-layout .h-layout .right-col{
     margin: 0 0;
 }
 
-.background-tint-black .appointment-layout .h-layout .right-col textarea{
+.black-background-tint-faq .appointment-layout .h-layout .right-col textarea{
     width: 275px;
     min-width: 275px;
     max-width: 435px;
@@ -1557,7 +2147,7 @@ body section .contact-countainer .contact-footer div a:hover {
     padding: 10px;
 }
 
-.background-tint-black .appointment-layout .submit-button{
+.black-background-tint-faq .appointment-layout .submit-button{
     display: flex;
     background: #F65730;
     width: 150px;
@@ -1569,14 +2159,15 @@ body section .contact-countainer .contact-footer div a:hover {
     overflow: hidden;
 }
 
-.background-tint-black .appointment-layout .submit-button p{
+.black-background-tint-faq .appointment-layout .submit-button p{
     font-size:13px;
     font-family: "IBM Plex Sans hebrew";
     font-weight: bold;
     color: #ffffff;
     margin: 4px 4px;
 }
-.background-tint-black .appointment-layout .submit-button:hover{
+
+.black-background-tint-faq .appointment-layout .submit-button:hover{
     border: 1.5px solid #F65730;
     background: inherit;
     transition: all 0.5s ease;
@@ -1587,26 +2178,15 @@ body section .contact-countainer .contact-footer div a:hover {
 
 /* Responsiveness of the FAQ Section */
 @media screen and (max-width: 880px) {
-    .background-tint-black .appointment-layout .h-layout{
+    .black-background-tint-faq .appointment-layout .h-layout{
         flex-direction: column !important;
     }
 
-    .background-tint-black .appointment-layout .h-layout .right-col{
+    .black-background-tint-faq .appointment-layout .h-layout .right-col{
         margin: 0 50px !important;
     }
-}
 
-.footer-bottom .playpause {
-    background-image: url(http://png-4.findicons.com/files/icons/2315/default_icon/256/media_play_pause_resume.png);
-    background-repeat: no-repeat;
-    width: 50%;
-    height: 50%;
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    margin: auto;
-    background-size: contain;
-    background-position: center;
+    #FAQsForm{
+        height: fit-content;
+    }
 }

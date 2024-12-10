@@ -287,9 +287,51 @@ body main .page-sec {
     justify-content: center;
     background-color: #000000a6;
     width: 100%;
-    height: 100%;
+    height: 0%;
     position: fixed;
     z-index: 3;
+    border-radius: 0px;
+    bottom: 0;
+    transition: all 0.5s ease;
+    overflow: scroll;
+}
+
+.black-background-tint-faq {
+    display: flex;
+    justify-content: center;
+    background-color: #000000a6;
+    width: 100%;
+    height: 0%;
+    position: fixed;
+    z-index: 3;
+    border-radius: 0px;
+    bottom: 0;
+    transition: all 0.5s ease;
+    overflow: scroll;
+}
+
+.black-background-tint-lead-capture {
+    display: flex;
+    justify-content: center;
+    background-color: #000000a6;
+    width: 100%;
+    height: 0%;
+    position: fixed;
+    z-index: 3;
+    border-radius: 0px;
+    bottom: 0;
+    transition: all 0.5s ease;
+    overflow: scroll;
+}
+
+.black-background-tint-thank-section {
+    display: flex;
+    justify-content: center;
+    background-color: #000000a6;
+    width: 100%;
+    height: 0%;
+    position: fixed;
+    z-index: 2;
     border-radius: 0px;
     bottom: 0;
     transition: all 0.5s ease;
