@@ -1,31 +1,35 @@
 {
-  "name": "devportfolio-template",
-  "version": "1.2.2",
-  "description": "",
-  "main": "js/scripts.js",
+  "name": "developer-portfolio",
+  "description": "Portfolio of Michael Maina",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "watch": "gulp watch"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "keywords": [
-    "portfolio",
-    "personal",
-    "website",
-    "tech",
-    "coding",
-    "dev"
-  ],
-  "author": "Maina Michael",
-  "license": "MIT",
+  "dependencies": {
+    "@emailjs/browser": "^4.3.1",
+    "@next/third-parties": "15.1.1",
+    "axios": "^1.6.8",
+    "lottie-react": "^2.4.1",
+    "next": "15.1.1",
+    "nodemailer": "^6.9.15",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-fast-marquee": "^1.6.2",
+    "react-google-recaptcha": "^3.1.0",
+    "react-icons": "^4.11.0",
+    "react-toastify": "^10.0.4",
+    "sharp": "^0.33.5"
+  },
   "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.0",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-babel": "^8.0.0",
-    "gulp-plumber": "^1.2.1",
-    "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.2",
-    "gulp-wait": "0.0.2"
+    "autoprefixer": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "15.1.1",
+    "postcss": "latest",
+    "sass": "^1.69.5",
+    "tailwindcss": "latest"
   }
 }
