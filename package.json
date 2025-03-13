@@ -7,29 +7,36 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "preview": "next start"
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.1",
-    "@next/third-parties": "15.1.1",
-    "axios": "^1.6.8",
+    "@next/third-parties": "latest",
     "lottie-react": "^2.4.1",
-    "next": "15.1.1",
-    "nodemailer": "^6.9.15",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
+    "next": "latest",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-fast-marquee": "^1.6.2",
     "react-google-recaptcha": "^3.1.0",
     "react-icons": "^4.11.0",
     "react-toastify": "^10.0.4",
-    "sharp": "^0.33.5"
+    "sharp": "latest"
   },
   "devDependencies": {
     "autoprefixer": "latest",
     "eslint": "latest",
-    "eslint-config-next": "15.1.1",
+    "eslint-config-next": "latest",
     "postcss": "latest",
     "sass": "^1.69.5",
-    "tailwindcss": "latest"
+    "tailwindcss": "latest",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.0",
+    "prettier": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   }
 }

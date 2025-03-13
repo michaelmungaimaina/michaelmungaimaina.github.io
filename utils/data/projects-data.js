@@ -3,7 +3,7 @@ export const projectsData = [
         id: 1,
         name: 'AdConnect',
         description: "As part of a collaborative team effort, I contributed to the development of a robust web application for lead capture and generation. My primary responsibility was designing and implementing the backend API using Express.js, Node.js, and MySQL. This application streamlines the process of capturing, managing, and generating leads, providing businesses with a powerful tool to enhance their sales and marketing efforts.",
-        tools: ['Express', 'MySQL', 'Multer', 'Node Mailer'],
+        tools: ['Express', 'MySQL', 'Multer', 'Node Mailer', 'promise'],
         role: 'Full Stack Developer',
         code: 'https://github.com/michaelmungaimaina/AdConnect',
         demo: 'https://adconnect.co.ke/',
@@ -33,7 +33,7 @@ export const projectsData = [
         tools: ['Figma',],
         code: '',
         demo: '',
-        role: 'UI/UX Design',
+        role: 'UI/UX Designer',
     },
     {
         id: 5,
@@ -43,6 +43,24 @@ export const projectsData = [
         code: 'https://github.com/michaelmungaimaina/elixir-salon-spur',
         demo: 'https://elixirsalonandspa.co.ke',
         role: 'Full Stack Developer',
+    },
+    {
+        id: 6,
+        name: 'Shallom Project',
+        description: "This is a church mobile app designed to provide a seamless and intuitive user experience with a modern, elegant interface. The app facilitates the management of church activities, including event planning, handling requests during services, accessing Bible lessons, and offering a customized song playlist. It combines functionality with ease of use, ensuring that users can engage with the app effortlessly while staying connected with their church community.",
+        tools: ['Figma', 'Java', 'Firebase', 'SQLite', 'XML'],
+        code: 'https://github.com/michaelmungaimaina/ShallomApp',
+        demo: 'https://www.figma.com/design/BgGZnePw9nDgORufkJarOn/MY-PROJECTS?node-id=0-1&p=f&t=EtpGPDNrKvZR2kfA-0',
+        role: 'Android Developer | UI/UX Designer',
+    },
+    {
+        id: 7,
+        name: 'Elixir Salon Figma Design',
+        description: "A seamless user experience and a modern, elegant interface that aligns with the relaxing and luxurious vibe of the beauty and wellness industry. By prioritizing usability, accessibility, and aesthetics, the system ensures that salon and spa staff can efficiently manage client records, and appointments with ease.",
+        tools: ['Figma'],
+        code: 'https://github.com/michaelmungaimaina/elixir-salon-spur',
+        demo: 'https://www.figma.com/design/heA8uBM3GA2b8BM2yEMC1t/ELIXIL-SITE?node-id=2006-3&p=f&t=3Jfn9eoq2z0BjRWv-0',
+        role: 'UI/UX Designer',
     }
 ];
 
