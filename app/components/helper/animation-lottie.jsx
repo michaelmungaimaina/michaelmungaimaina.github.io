@@ -1,6 +1,9 @@
-"use client"
+'use client'
 
-import Lottie from "lottie-react";
+import dynamic from 'next/dynamic';
+
+// Dynamically import Lottie with ssr: false
+const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 
 const AnimationLottie = ({ animationPath, width }) => {
   const defaultOptions = {
@@ -9,12 +12,10 @@ const AnimationLottie = ({ animationPath, width }) => {
     animationData: animationPath,
     style: {
       width: '95%',
-    }
+    },
   };
 
-  return (
-    <Lottie {...defaultOptions} />
-  );
+  return <Lottie {...defaultOptions} />;
 };
 
 export default AnimationLottie;

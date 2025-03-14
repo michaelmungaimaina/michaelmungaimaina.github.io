@@ -1,5 +1,5 @@
 {
-  "name": "developer-portfolio",
+  "name": "my-portfolio",
   "description": "Portfolio of Michael Maina",
   "version": "0.1.0",
   "private": true,
@@ -11,29 +11,43 @@
     "format": "prettier --write .",
     "preview": "next start"
   },
-  "dependencies": {
-    "@emailjs/browser": "^4.3.1",
-    "@next/third-parties": "latest",
-    "lottie-react": "^2.4.1",
-    "next": "latest",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-fast-marquee": "^1.6.2",
-    "react-google-recaptcha": "^3.1.0",
-    "react-icons": "^4.11.0",
-    "react-toastify": "^10.0.4",
-    "sharp": "latest"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelmungaimaina/michaelmungaimaina.github.io.git"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaelmungaimaina/michaelmungaimaina.github.io/issues"
+  },
+  "homepage": "https://github.com/michaelmungaimaina/michaelmungaimaina.github.io#readme",
   "devDependencies": {
-    "autoprefixer": "latest",
-    "eslint": "latest",
-    "eslint-config-next": "latest",
-    "postcss": "latest",
-    "sass": "^1.69.5",
-    "tailwindcss": "latest",
-    "husky": "^8.0.0",
-    "lint-staged": "^13.0.0",
-    "prettier": "^2.0.0"
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.22.0",
+    "eslint-config-next": "^15.2.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.0",
+    "postcss": "^8.5.3",
+    "prettier": "^3.5.3",
+    "sass": "^1.85.1",
+    "tailwindcss": "^4.0.14"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@next/third-parties": "^15.2.2",
+    "@tailwindcss/postcss7-compat": "^2.2.17",
+    "axios": "^1.8.3",
+    "lottie-react": "^2.4.1",
+    "next": "^15.2.2",
+    "nodemailer": "^6.10.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-fast-marquee": "^1.6.5",
+    "react-google-recaptcha": "^3.1.0",
+    "react-icons": "^5.5.0",
+    "react-toastify": "^11.0.5",
+    "sharp": "^0.33.5"
   },
   "engines": {
     "node": ">=18.0.0",
