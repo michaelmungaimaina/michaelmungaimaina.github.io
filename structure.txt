@@ -1,0 +1,25 @@
+project-root/
+├── app/
+│   ├── api/
+│   │   ├── data/
+│   │   │   ├── route.js
+│   ├── assets/
+│   │   ├── lottie/
+│   │   │   ├── lotti.js
+│   ├── blog/
+│   │   ├── page.js
+│   ├── components/
+│   │   ├── helper/
+│   │   ├── homepage/
+│   │   ├── footer.jsx
+│   │   ├── navbar.jsx
+│   ├── css/
+│   │   ├── card.scss
+│   │   ├── global.scss
+├── public/
+│   └── background.png
+├── utils/
+│   └── Data/
+├── tailwind.config.js
+├── postcss.config.js
+└── package.json
