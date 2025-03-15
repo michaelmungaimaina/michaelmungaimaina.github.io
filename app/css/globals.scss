@@ -1,5 +1,6 @@
-@import "tailwindcss/preflight";
-@tailwind utilities; /* This imports utility classes */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --foreground-rgb: rgb(211, 216, 232);

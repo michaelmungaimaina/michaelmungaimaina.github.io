@@ -5,10 +5,17 @@
 .glow-card {
   --active: 0.15;
   --start: 0;
+  position: relative;
+  overflow: visible; 
 }
 
 .glow-card:is(:hover, :focus-visible) {
   z-index: 2;
+}
+
+.achievements-container {
+  position: relative;
+  z-index: 10; /* Ensure achievements are above the glows */
 }
 
 .glows {

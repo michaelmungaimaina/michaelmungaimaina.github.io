@@ -116,13 +116,21 @@ function HeroSection() {
                 <span className="text-gray-400">{`['`}</span>
                 <span className="text-amber-300">Java</span>
                 <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">Java Spring</span>
+                <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">Android</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Web Dev</span>
+                <span className="text-amber-300">Python</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Express</span>
+                <span className="text-amber-300">PHP</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">JavaFX</span>
+                <span className="text-amber-300">HTML</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">CSS</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">NestJS</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">NodeJS</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">MySql</span>
                 <span className="text-gray-400">{"', '"}</span>
@@ -130,7 +138,7 @@ function HeroSection() {
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">Docker</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">AI</span>
+                <span className="text-amber-300">Bootstrap</span>
                 <span className="text-gray-400">{"'],"}</span>
               </div>
               <div>
@@ -145,6 +153,16 @@ function HeroSection() {
               </div>
               <div>
                 <span className="ml-4 lg:ml-8 mr-2 text-white">problemSolver:</span>
+                <span className="text-orange-400">true</span>
+                <span className="text-gray-400">,</span>
+              </div>
+              <div>
+                <span className="ml-4 lg:ml-8 mr-2 text-white">innovative:</span>
+                <span className="text-orange-400">true</span>
+                <span className="text-gray-400">,</span>
+              </div>
+              <div>
+                <span className="ml-4 lg:ml-8 mr-2 text-white">ergonomic:</span>
                 <span className="text-orange-400">true</span>
                 <span className="text-gray-400">,</span>
               </div>
@@ -165,6 +183,16 @@ function HeroSection() {
               <div>
                 <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
                 <span className="mr-2 text-white">problemSolver</span>
+                <span className="text-amber-300">&amp;&amp;</span>
+              </div>
+              <div>
+                <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
+                <span className="mr-2 text-white">innovative</span>
+                <span className="text-amber-300">&amp;&amp;</span>
+              </div>
+              <div>
+                <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
+                <span className="mr-2 text-white">ergonomic</span>
                 <span className="text-amber-300">&amp;&amp;</span>
               </div>
               <div>
