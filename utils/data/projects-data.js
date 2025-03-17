@@ -61,6 +61,42 @@ export const projectsData = [
         code: 'https://github.com/michaelmungaimaina/elixir-salon-spur',
         demo: 'https://www.figma.com/design/heA8uBM3GA2b8BM2yEMC1t/ELIXIL-SITE?node-id=2006-3&p=f&t=3Jfn9eoq2z0BjRWv-0',
         role: 'UI/UX Designer',
+    },
+    {
+        id: 8,
+        name: 'Adconnect Figma Design',
+        description: "I designed a Figma layout for a site that focuses on lead capture and ROI tracking, with both a client side and an admin side. On the client side, I created a clean and engaging interface that highlights lead capture through simple, intuitive forms and clear calls to action, aimed at maximizing conversions. I also emphasized the value proposition with easy navigation and trust-building elements to encourage user engagement. For the admin side, I designed a comprehensive dashboard that allows users to manage leads, track ROI, and generate detailed analytics, all within an organized, user-friendly layout. The design is fully responsive, ensuring a seamless experience across both desktop and mobile devices.",
+        tools: ['Figma'],
+        code: '',
+        demo: 'https://www.figma.com/design/BgGZnePw9nDgORufkJarOn/MY-PROJECTS?node-id=401-2&t=h8C5ioGL8bd7asF7-1',
+        role: 'UI/UX Designer',
+    },
+    {
+        id: 9,
+        name: 'Nuloft Salon & Spa Design',
+        description: "I designed the Figma layout for Nuloft Salon & Spa, focusing on a seamless and elegant user experience for both customers and staff. The customer side features an intuitive interface where users can easily browse services, book appointments, and view available stylists or therapists. The design emphasizes simplicity and elegance, with high-quality images of the salon's offerings and a smooth, easy-to-navigate booking process.",
+        tools: ['Figma'],
+        code: '',
+        demo: 'https://www.figma.com/design/EahPFT9VHAbpbY1bDD6X8Q/MY-PROJECTS?node-id=208-2&t=ateDFVfsPX0XSQ2e-1',
+        role: 'UI/UX Designer',
+    },
+     {
+        id: 10,
+        name: 'Ricosam Web Design',
+        description: "I designed the Figma layout for Ricosam, a construction company website, with a focus on professionalism, clarity, and user engagement. The homepage features a clean, modern design with a bold header showcasing the company's services and expertise. It highlights key areas such as project portfolio, services, and client testimonials to build trust and credibility. The services page provides a detailed breakdown of Ricosam's offerings, with easy navigation and clear descriptions of each service. The project gallery is designed to showcase past work with high-quality images, demonstrating the company's capabilities. Additionally, there’s a dedicated contact page with a simple form for inquiries, making it easy for potential clients to get in touch.",
+        tools: ['Figma'],
+        code: '',
+        demo: 'https://www.figma.com/design/EahPFT9VHAbpbY1bDD6X8Q/MY-PROJECTS?node-id=347-2&t=ateDFVfsPX0XSQ2e-1',
+        role: 'UI/UX Designer',
+    },
+    {
+        id: 11,
+        name: 'Songa App Design',
+        description: "The Figma design for Songa, a ride request app, was a collaborative effort where we focused on creating a seamless experience for both users and drivers. On the user side, we designed an intuitive interface that allows riders to quickly input their pickup and destination locations, view estimated fares, and track their ride in real-time with an interactive map. We worked together to ensure the app’s layout was clean and user-friendly, featuring clear calls to action and smooth navigation.",
+        tools: ['Figma'],
+        code: '',
+        demo: 'https://www.figma.com/file/ckD6iRgsKOGccgme5evgx6/SONGA-RIDER-and-USER-UI',
+        role: 'UI/UX Designer',
     }
 ];
 
