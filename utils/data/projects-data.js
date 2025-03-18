@@ -32,7 +32,7 @@ export const projectsData = [
         description: "I have designed an intuitive and visually appealing Document Management System (DMS) using Figma, focusing on delivering a seamless user experience and a modern, elegant interface. The design prioritizes usability, accessibility, and aesthetics to ensure users can efficiently manage, organize, and interact with their documents.",
         tools: ['Figma',],
         code: '',
-        demo: 'https://www.figma.com/design/BgGZnePw9nDgORufkJarOn/MY-PROJECTS',
+        demo: 'https://www.figma.com/design/BgGZnePw9nDgORufkJarOn/MY-PROJECTS?node-id=301-3',
         role: 'UI/UX Designer',
     },
     {
